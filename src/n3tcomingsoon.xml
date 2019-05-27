@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="system" method="upgrade">
+	<name>PLG_SYSTEM_N3TCOMINGSOON_MANIFEST_NAME</name>
+	<creationDate>2011-11-17</creationDate>
+	<author>Pavel Poles - n3t.cz</author>
+	<authorEmail></authorEmail>
+	<authorUrl>joomlacode.org/gf/project/n3t</authorUrl>
+	<copyright>(c) 2010-2012 Pavel Poles - n3t.cz. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>2.5.3</version>
+	<description>PLG_SYSTEM_N3TCOMINGSOON_MANIFEST_DESCRIPTION</description>
+  <updateservers>
+    <server type="collection" priority="1" name="n3t Extensions Updates">http://joomla.n3t.cz/updates/extensions.xml</server>
+  </updateservers>  	
+	<files>
+		<folder>fields</folder>
+
+		<filename plugin="n3tcomingsoon">n3tcomingsoon.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<media destination="plg_n3tcomingsoon" folder="media">
+    <folder>css</folder>
+    <folder>images</folder>
+    <folder>javascript</folder>
+	  <filename>index.html</filename>
+	  <filename>soon.php</filename>
+	</media>  	
+	<languages folder="language">
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_system_n3tcomingsoon.ini</language>
+		<language tag="cs-CZ">cs-CZ/cs-CZ.plg_system_n3tcomingsoon.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_system_n3tcomingsoon.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_system_n3tcomingsoon.sys.ini</language>
+		<language tag="el-GR">el-GR/el-GR.plg_system_n3tcomingsoon.ini</language>
+		<language tag="el-GR">el-GR/el-GR.plg_system_n3tcomingsoon.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_n3tcomingsoon.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_n3tcomingsoon.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_n3tcomingsoon.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_n3tcomingsoon.sys.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_system_n3tcomingsoon.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_system_n3tcomingsoon.sys.ini</language>
+	</languages>
+	<config>
+	  <fields name="params" addfieldpath="/plugins/system/n3tcomingsoon/fields">
+    	<fieldset name="access" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_ACCESS_SETTINGS">
+    	  <field name="online" type="calendar" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_ONLINE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_ONLINE_DESC" format="%Y-%m-%d %H:%M:%S" />
+    	  <field name="get_filter" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_GET_FILTER" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_GET_FILTER_DESC" size="30" />
+    	  <field name="ip_filter" type="iplist" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_IP_FILTER" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_IP_FILTER_DESC" rows="10" cols="35" />
+      </fieldset>
+      <fieldset name="output" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_DISPLAY_SETTINGS">
+    	  <field type="spacer" default="PLG_SYSTEM_N3TCOMINGSOON_CFG_DISPLAY_SETTINGS" />
+    	  <field name="custom_file" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_FILE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_FILE_DESC" size="30" />
+    	  <field name="theme" type="list" default="light" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_THEME" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_THEME_DESC">    			
+    			<option value="light">PLG_SYSTEM_N3TCOMINGSOON_CFG_THEME_LIGHT</option>
+    			<option value="dark">PLG_SYSTEM_N3TCOMINGSOON_CFG_THEME_DARK</option>
+    		</field>    	  	  
+    		<field name="logo" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_LOGO" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_LOGO_DESC" size="30" />
+    		<field name="background_image" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_BACKGROUND_IMAGE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_BACKGROUND_IMAGE_DESC" size="30" />
+    		<field name="favicon" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_FAVICON" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_FAVICON_DESC" size="30" />
+    	  <field name="title" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_TITLE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_TITLE_DESC" size="30" />
+    	  <field name="text" type="textarea" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_TEXT" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_TEXT_DESC" rows="10" cols="35" />
+    	  <field name="prepare_content" type="list" default="0" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_PREPARE_CONTENT" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_PREPARE_CONTENT_DESC">    			
+    			<option value="0">PLG_SYSTEM_N3TCOMINGSOON_CFG_NO</option>
+    			<option value="1">PLG_SYSTEM_N3TCOMINGSOON_CFG_YES</option>
+    		</field>    	  	      	  
+    	  <field name="date_format_lc" type="dateformat" default="DATE_FORMAT_LC2" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_DATE_FORMAT_LC" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_DATE_FORMAT_LC_DESC">
+          <option value="-">PLG_SYSTEM_N3TCOMINGSOON_CFG_DATE_FORMAT_LC_CUSTOM</option>
+        </field>
+    	  <field name="custom_date_format" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_DATE_FORMAT" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_DATE_FORMAT_DESC" size="30" />
+    	  <field name="custom_css" type="textarea" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_CSS" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_CUSTOM_CSS_DESC" rows="10" cols="35" />
+      </fieldset>
+    	<fieldset name="meta" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_SETTINGS">
+    	  <field name="ga_code" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_CODE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_CODE_DESC" size="30" />
+    	  <field name="ga_mode" type="list" default="single" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_MODE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_MODE_DESC">
+    			<option value="single">PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_MODE_SINGLE</option>
+    			<option value="subdomains">PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_MODE_SUBDOMAINS</option>
+    			<option value="multi">PLG_SYSTEM_N3TCOMINGSOON_CFG_GA_MODE_MULTI</option>
+    		</field>
+    	  <field name="meta_title" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_TITLE" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_TITLE_DESC" size="30" />
+    	  <field name="meta_desc" type="textarea" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_DESC" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_DESC_DESC" rows="10" cols="35" />
+    	  <field name="meta_keys" type="textarea" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_KEYS" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_META_KEYS_DESC" rows="10" cols="35" />
+      </fieldset>
+      <fieldset name="social" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_SOCIAL_SETTINGS">
+        <field name="facebook_url" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_FACEBOOK_URL" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_FACEBOOK_URL_DESC" size="30" />
+        <field name="twitter_url" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_TWITTER_URL" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_TWITTER_URL_DESC" size="30" />
+        <field name="googleplus_url" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_GOOGLEPLUS_URL" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_GOOGLEPLUS_URL_DESC" size="30" />
+        <field name="youtube_url" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_YOUTUBE_URL" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_YOUTUBE_URL_DESC" size="30" />
+    	  <field name="social_links_target" type="list" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_SOCIAL_LINKS_TARGET" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_SOCIAL_LINKS_TARGET_DESC">
+    			<option value="">PLG_SYSTEM_N3TCOMINGSOON_CFG_SOCIAL_LINKS_TARGET_PARENT</option>
+          <option value="_blank">PLG_SYSTEM_N3TCOMINGSOON_CFG_SOCIAL_LINKS_TARGET_BLANK</option>
+    		</field>
+      </fieldset>
+    	<fieldset name="integration" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_INTEGRATION_SETTINGS">
+    	  <field name="maillist" type="list" default="none" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_DESC">
+    			<option value="none">PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_NONE</option>
+    			<option value="acymailing">PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_ACYMAILING</option>
+    			<option value="jnews">PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_JNEWS</option>
+    		</field>
+        <field name="maillist_text" type="textarea" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_TEXT" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_TEXT_DESC" rows="10" cols="35" />
+    	  <field name="maillist_name" type="list" default="1" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_NAME" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_NAME_DESC">
+    			<option value="0">PLG_SYSTEM_N3TCOMINGSOON_CFG_NO</option>
+    			<option value="1">PLG_SYSTEM_N3TCOMINGSOON_CFG_YES</option>
+    		</field>
+        <field name="acymailing_lists" type="text" default="" label="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_LISTS" description="PLG_SYSTEM_N3TCOMINGSOON_CFG_MAILLIST_LISTS_DESC" size="30" />
+      </fieldset>
+	  </fields>
+	</config>  	
+</extension>

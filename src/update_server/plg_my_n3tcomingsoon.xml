@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<!-- See also https://docs.joomla.org/Deploying_an_Update_Server -->
+
+	<update>
+		<name>plg_my_n3tcomingsoon</name>
+		<description>plugin to show coming soon landingpage</description>
+		<maintainer>Pierre Veelen</maintainer>
+		<maintainerurl>http://www.pvln.nl</maintainerurl>
+        <element>plg_my_n3tcomingsoon</element>
+		<type>plugin</type>
+		<client>0</client>
+		<version>2.5.3</version>
+		<infourl title="Show coming soon landingpage">http://www.pvln.nl/my_n3tcomingsoon</infourl>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">http://download.pvln.nl/joomla/plugins/my_n3tcomingsoon/plg_my_n3tcomingsoon_v2.5.3.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3" />
+	</update>
+
+</updates>

@@ -18,6 +18,6 @@
 # 
 # Changes should be commented in CHANGELOG.md
 #
-majorversion=0
-minorversion=0
-patchversion=1
+majorversion=2
+minorversion=5
+patchversion=3

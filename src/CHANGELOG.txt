@@ -1,0 +1,65 @@
+[2.5.3]
+(#) es-ES translation installation bug
+
+[2.5.2]
+(+) el-GR translation - thanks to George Katsogiannos at Transifex
+
+[2.5.1]
+(+) es-ES translation - thanks to Miguel at Transifex
+(+) de-DE translation - thanks to Stefan Kreitz
+
+[2.5.0]
+(+) Joomla 3.0 compatibility
+(-) Joomla 1.5 compatibility - use version 2.0.x instead
+(#) IE style on certain server configuration
+(*) PHP 5 Strict Standards improvements
+(*) Date format changed to follow Joomla standards
+(*) Default date format is taken from Joomla language file now
+(+) Administration improvements
+(+) it-IT translation - thanks to Fabio Perri at Transifex
+
+[2.0.3]
+(#) 2.0.2 wrong install package
+
+[2.0.2]
+(+) Youtube link support
+(+) jNews support
+(+) option not to display name for subscribing to maillist
+(#) Wrong domain name for Google Analytics, when multiple (sub)domain support enabled
+
+[2.0.1]
+(+) Social networks support
+(#) XHTML validity
+
+[2.0.0]
+(+) Google Analytics support
+(!) New version numbering
+(!) Joomla! 1.6 and 1.7 are not further supported
+
+[1.0.6]
+(#) Logo image and favicon, when joomla installed in subfolder
+
+[1.0.5]
+(#) AcyMailing subscription, when joomla installed in subfolder
+(#) Joomla! 1.5 JavaScript error, when using background image
+
+[1.0.4]
+(+) AcyMailing support
+
+[1.0.3]
+(+) Background image support
+(+) Favicon support
+(+) New META Title field
+(#) IE 8 counter background 
+
+[1.0.2]
+(#) Corrected base path to include css and javascript for default themes
+(#) Corrected default value for date format and the help text
+
+[1.0.1]
+(+) Title and Text could be processed by content plugins
+(+) Custom CSS could be add to standard pages
+(*) Improved standard CSS support for IE
+
+[1.0.0]
+(!) Initial release
