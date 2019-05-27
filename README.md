@@ -1,1 +1,1 @@
-# README file for the myn3tcomingsoon Joomla! extension 
+# README file for the my_n3tcomingsoon Joomla! extension 
