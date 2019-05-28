@@ -9,9 +9,17 @@
 	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
 	<version>2.5.3</version>
 	<description>PLG_SYSTEM_N3TCOMINGSOON_MANIFEST_DESCRIPTION</description>
-  <updateservers>
-    <server type="collection" priority="1" name="n3t Extensions Updates">http://joomla.n3t.cz/updates/extensions.xml</server>
-  </updateservers>  	
+
+    <!-- configuration for update servers-->
+    <updateservers>
+        <server
+            type="extension"
+            priority="1"
+            name="Updates for my_n3tcomingsoon plugin">
+            http://update.pvln.nl/joomla/plugins/my_n3tcomingsoon/plg_my_n3tcomingsoon.xml
+        </server>
+    </updateservers>
+
 	<files>
 		<folder>fields</folder>
 
