@@ -13,6 +13,7 @@
 # - change of file name of generic files
 #
 # Minor releases indicate the addition of new features or a significant change to existing features.
+# - Language files added
 # 
 # Patch releases indicate that bugs have been fixed.
 # 

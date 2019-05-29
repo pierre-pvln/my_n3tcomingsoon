@@ -29,6 +29,9 @@ set
 update_server
 
 ##
-# exclude the version file
+# exclude files
 ##
 _version.txt
+TODO.md
+README.md
+CHANGELOG.txt
