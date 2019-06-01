@@ -4,8 +4,8 @@
 #
 # For extension: my_n3tcomingsoon
 #
-# Using Semantic Versioning 2.0.0 
-# Major.Minor.[patch]
+# Using Semantic Versioning 2.0.0 and adding [.development] 
+# Major.Minor[.patch][.development]
 #
 # In summary:
 # Major releases indicate a break in backward compatibility.
@@ -17,8 +17,12 @@
 # 
 # Patch releases indicate that bugs have been fixed.
 # 
+# Development version used to enable auto update feature within Joomla!
+#
+ 
 # Changes should be commented in CHANGELOG.md
 #
 majorversion=2
 minorversion=5
 patchversion=3
+devversion=0
