@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+   <update>
+      <name>n3t Coming Soon</name>
+      <description>n3t Coming Soon plugin</description>
+      <element>n3tcomingsoon</element>
+      <type>plugin</type>
+      <folder>system</folder>
+      <client>administrator</client>
+      <version>2.5.3</version>
+      <infourl title="n3tComingSoon 2.5.3">http://n3tcomingsoon.docs.n3t.cz/en/latest/about/release-notes/</infourl>
+      <downloads>
+         <downloadurl type="full" format="zip">https://bitbucket.org/n3t/n3t-coming-soon/downloads/plg_n3tcomingsoon-2.5.3.zip</downloadurl>
+      </downloads>
+      <tags>
+        <tag>stable</tag>
+      </tags>      
+      <maintainer>Pavel Poles - n3t.cz</maintainer>
+      <maintainerurl>http://n3t.bitbucket.org/</maintainerurl>
+      <section>n3t</section>
+      <targetplatform name="joomla" version="3.[4]" />
+      <php_minimum>5.3.10</php_minimum>
+   </update>
+</updates>
